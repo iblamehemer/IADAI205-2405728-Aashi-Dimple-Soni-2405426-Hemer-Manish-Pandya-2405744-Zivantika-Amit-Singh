@@ -1,0 +1,19 @@
+# BrandSphere AI — Streamlit Cloud Deployment Config
+name: brandsphere-ai
+entrypoint: app.py
+python: "3.11"
+dependencies:
+  - requirements.txt
+[theme]
+primaryColor = "#F4A261"
+backgroundColor = "#0E1117"
+secondaryBackgroundColor = "#1B2838"
+textColor = "#FAFAFA"
+font = "sans serif"
+
+[server]
+maxUploadSize = 50
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
